@@ -25,6 +25,10 @@ h3{
   color:#544E15;
 }
 
+li{
+  list-style-type:none;
+}
+
 #container{
   background-color:#FFFFCC;
   width:75%;
@@ -52,7 +56,7 @@ h3{
   display:block;
   text-align:center;
   padding: 4px;
-  
+
 }
 
 img{
