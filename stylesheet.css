@@ -42,9 +42,11 @@ li{
 #nav li{
   list-style-type:none;
   padding:none;
+  background-color:#953737;
+  color:#FFFFFF;
   font-family:Helvetica, Arial, sans-serif;
   font-weight:bold;
-  float:right;
+  float:left;
   margin:0;
   padding:0;
   width:25%;
