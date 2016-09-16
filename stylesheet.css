@@ -44,13 +44,15 @@ h3{
   margin:0;
   padding:0;
   width:25%;
-
 }
 
 #nav a:link, a:visited{
   color:#151B54;
   text-decoration:none;
-
+  display:block;
+  text-align:center;
+  padding: 4px;
+  
 }
 
 img{
