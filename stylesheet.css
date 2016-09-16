@@ -42,7 +42,6 @@ li{
 #nav li{
   list-style-type:none;
   padding:none;
-  color:#fab000;
   background-color:#953737;
   font-family:Helvetica, Arial, sans-serif;
   font-weight:bold;
@@ -53,7 +52,7 @@ li{
 }
 
 #nav a:link, a:visited{
-  color:#151B54;
+  color:#fab000;
   text-decoration:none;
   display:block;
   text-align:center;
