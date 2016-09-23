@@ -1,6 +1,6 @@
 body{
   text-align:center;
-  background-color:#151B54;
+  background-color:#5AA4EB;
 }
 
 p{
@@ -9,21 +9,23 @@ p{
 }
 
 h1{
-  font-family:Georgia, "Times New Roman", serif;
-  font-weight:bolder;
-  color:#fab000;
+  font-family:"Bree Serif", Georgia, "Times New Roman", serif;
+  font-weight:400;
+  color:#FFFFFF;
   padding-top:5px;
 }
 
 h2{
-  font-family:Georgia, "Times New Roman", serif;
+  font-family:"Arimo", Helvetica, sans-serif;
+  font-weight:400;
   font-style:italic;
-  color:#fab000;
+  color:#FFFFFF;
 }
 
 h3{
-  font-family:Helvetica, Arial, sans-serif;
-  color:#fab000;
+  font-family:"Catamaran", Arial, sans-serif;
+  font-weight:500;
+  color:#FFFFFF;
 }
 
 li{
@@ -31,8 +33,8 @@ li{
 }
 
 #container{
-  background-color:#FFFFFF;
-  width:75%;
+  background-color:#BCD9F5;
+  width:85%;
   margin:0 auto;
 }
 
@@ -42,9 +44,9 @@ li{
 
 #nav li{
   list-style-type:none;
-  background-color:#953737;
-  font-family:Helvetica, Arial, sans-serif;
-  font-weight:bold;
+  background-color:#E19E9E;
+  font-family:"Arimo", Helvetica, sans-serif;
+  font-weight:700;
   float:left;
   margin:0;
   padding:0;
@@ -52,15 +54,22 @@ li{
 }
 
 #nav a:link, a:visited{
-  color:#fab000;
   text-decoration:none;
+  color:#FFF;
   display:block;
   text-align:center;
   padding: 4px;
 }
  #nav a:active, a:hover{
-   background-color:#E19E9E;
+   background-color:#F9CBCB;
  }
+
+a:link{
+  text-decoration:none;
+  font-family:"Catamaran", Arial, sans-serif;
+  color:#BE6B6B;
+  font-weight:200;
+}
 
 
 img{
