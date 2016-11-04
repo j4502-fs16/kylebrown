@@ -143,14 +143,12 @@ a:link{
   }
 
   .sidebar{
-    flex:1;
-    flex-shrink:2 auto;
+    flex:1 auto;
   }
 
   .main{
     flex:5 0px;
     flex-wrap:wrap-reverse;
-    flex
   }
 
   .main{
