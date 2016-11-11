@@ -15,7 +15,7 @@ nav ul li{
   /*width:25%;*/
 }
 
-nav li a:link, a:visited{
+nav ul li a:link, a:visited{
   text-decoration:none;
   color:#FFF;
   display:block;
@@ -23,7 +23,7 @@ nav li a:link, a:visited{
   padding: 20px 30px;
 }
 
-nav li a:active, a:hover{
+nav ul li a:active, a:hover{
    background-color:#F9CBCB;
  }
 
