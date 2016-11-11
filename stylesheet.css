@@ -15,7 +15,7 @@ nav ul li{
   /*width:25%;*/
 }
 
-nav a:link, a:visited{
+nav li a:link, a:visited{
   text-decoration:none;
   color:#FFF;
   display:block;
@@ -23,7 +23,7 @@ nav a:link, a:visited{
   padding: 20px 30px;
 }
 
-nav a:active, a:hover{
+nav li a:active, a:hover{
    background-color:#F9CBCB;
  }
 
@@ -43,16 +43,12 @@ h1{
   font-family:"Bree Serif", Georgia, "Times New Roman", serif;
   font-weight:400;
   color:#FFF;
-  padding-top:5px;
-}
-
-.menu-trigger{
-  order:1;
 }
 
 header{
   display:flex;
   flex-flow: row;
+  align-items:baseline;
   background-color:#E19E9E;
   margin:0;
   padding:0 10px;
@@ -114,6 +110,11 @@ a:link{
    margin-right:20px;
  }
 
+ .menu-trigger{
+   order:1;
+   margin-right:20px;
+ }
+
  nav ul{
    display:none;
  }
@@ -142,16 +143,16 @@ a:link{
     display:flex;
   }
 
-  .menu-trigger{
-    display:none;
-  }
-
   header h1{
     order:1;
   }
 
   nav{
     order:2;
+  }
+
+  .menu-trigger{
+    display:none;
   }
 }
 
