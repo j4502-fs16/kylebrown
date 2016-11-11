@@ -1,10 +1,10 @@
-.navigation{
+nav ul{
   padding:3px;
-  display:flex;
-  flex-flow:column;
+  display:block;
 }
 
-.navigation li{
+nav ul li{
+  border-top:1px #5AA4EB solid;
   list-style-type:none;
   background-color:#E19E9E;
   font-family:"Arimo", Helvetica, sans-serif;
@@ -12,48 +12,26 @@
   /*float:left;*/
   margin:0;
   padding:0;
-  width:25%;
+  /*width:25%;*/
 }
 
-.navigation a:link, a:visited{
+nav a:link, a:visited{
   text-decoration:none;
   color:#FFF;
   display:block;
   text-align:center;
-  padding: 4px;
+  padding: 20px 30px;
 }
-.navigation a:active, a:hover{
+
+nav a:active, a:hover{
    background-color:#F9CBCB;
  }
 
- @media all and (min-width:600px){
-   .navigation{
-     flex-flow:column;
-     justify-content:flex-end;;
-   }
- }
-
- @media all and (min-width:700px){
-   .navigation{
-     flex-flow:row;
-     justify-content:space-around;
-   }
- }
-
-
 body{
   text-align:center;
-  background-color:white;
+  background-color:#BCD9F5;
 }
 
-.watermark{
-  background-image: url("IMG_1841.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  z-index: -1;
-  opacity: 0.4;
-  width:100%
-}
 
 p{
   font-family:Helvetica, Arial, sans-serif;
@@ -64,16 +42,28 @@ p{
 h1{
   font-family:"Bree Serif", Georgia, "Times New Roman", serif;
   font-weight:400;
-  color:#FFFFFF;
+  color:#FFF;
   padding-top:5px;
 }
 
-h2{
+.menu-trigger{
+  order:1;
+}
+
+header{
+  display:flex;
+  flex-flow;
+  background-color:#E19E9E;
+  margin:0;
+  padding:0 10px;
+}
+
+/*h2{
   font-family:"Arimo", Lucida, sans-serif;
   font-weight:400;
   font-style:italic;
-  color:#FFFFFF;
-}
+  color:#BCD9F5;
+}*/
 
 h3{
   font-family:"Catamaran", Arial, sans-serif;
@@ -83,12 +73,6 @@ h3{
 
 li{
   list-style-type:none;
-}
-
-#container{
-  background-color:#BCD9F5;
-  width:92%;
-  margin:0 auto;
 }
 
 .wrapper{
@@ -130,10 +114,44 @@ a:link{
    margin-right:20px;
  }
 
+ nav ul{
+   display:none;
+ }
+
+
+  /*@media screen and (min-width:700px){
+    nav ul{
+      flex-flow:column;
+      justify-content:flex-end;;
+    }
+  }*/
+
 @media all and (max-width:599px){
   .bio{
     visibility:hidden;
     display:none;
+  }
+}
+
+@media all and (min-width:750px){
+  nav ul li{
+    border-top:none;
+  }
+
+  nav ul{
+    display:flex;
+  }
+
+  .menu-trigger{
+    display:none;
+  }
+
+  header h1{
+    order:1;
+  }
+
+  nav{
+    order:2;
   }
 }
 
