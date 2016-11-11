@@ -52,7 +52,7 @@ h1{
 
 header{
   display:flex;
-  flex-flow;
+  flex-flow: row;
   background-color:#E19E9E;
   margin:0;
   padding:0 10px;
