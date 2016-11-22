@@ -4,11 +4,12 @@ nav ul{
 }
 
 nav ul li{
-  border-top:1px #5AA4EB solid;
+  border-top:1px #edffb2 solid;
   list-style-type:none;
-  background-color:#E19E9E;
+  background-color:#425646;
   font-family:"Arimo", Helvetica, sans-serif;
   font-weight:700;
+  font-size: 1.2em;
   /*float:left;*/
   margin:0;
   padding:0;
@@ -24,42 +25,53 @@ nav ul li a:link, a:visited{
 }
 
 nav ul li a:active, a:hover{
-   background-color:#F9CBCB;
+   background-color:#4a604e;
  }
+
+.submenu{
+  display:none;
+}
+
+.submenu li{
+  font-family: "Arimo", Helvetica, sans-serif;
+  font-size: 1em;
+  font-style:italic;
+  color:white;
+  border-top: 1px #edffb2 solid;
+}
 
 body{
   text-align:center;
-  background-color:#BCD9F5;
+  background-color:#e0e0db;
 }
 
 
 p{
-  font-family:Helvetica, Arial, sans-serif;
-  color:white;
-  max-width:800px;
+  font-family: Garamond, "Times New Roman", serif;
+  color:black;
 }
 
 h1{
   font-family:"Bree Serif", Georgia, "Times New Roman", serif;
   font-weight:400;
-  color:#FFF;
+  color:#edffb2;
 }
 
 header{
   display:flex;
   flex-flow: row;
   align-items:baseline;
-  background-color:#E19E9E;
+  background-color:#425646;
   margin:0;
   padding:0 10px;
 }
 
-/*h2{
-  font-family:"Arimo", Lucida, sans-serif;
-  font-weight:400;
-  font-style:italic;
-  color:#BCD9F5;
-}*/
+h2{
+  font-family:"Catamaran", Arial, sans-serif;
+  font-size:1.8em;
+  font-weight:500;
+  color:#425646;
+}
 
 h3{
   font-family:"Catamaran", Arial, sans-serif;
@@ -117,6 +129,15 @@ a:link{
 
  nav ul{
    display:none;
+ }
+
+ .document{
+   background:#fff;
+   width:80%;
+   margin:0 auto;
+   padding:1.2em;
+   text-align:left;
+   max-width:875px;
  }
 
 
