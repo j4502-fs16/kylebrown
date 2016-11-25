@@ -29,7 +29,7 @@ nav ul li a:active, a:hover{
  }
 
  a:link, a:visited{
-   text-decoration:underline;
+   text-decoration:none;
    font-family:"Catamaran", Arial, sans-serif;
    color:#FFF;
    font-weight:200;
@@ -60,10 +60,11 @@ body{
 
 
 p{
-  font-family: Garamond, "Times New Roman", serif;
+  font-family: "Domine", "Times New Roman", serif;
+  weight:300;
   color:black;
   font-size:1em;
-  line-height:1.1em;
+  line-height:1.2em;
 }
 
 h1{
@@ -79,6 +80,14 @@ header{
   background-color:#425646;
   margin:0;
   padding:0 10px;
+  border-bottom:#73A46B 15px solid;
+}
+
+hr{
+  background-color:#98D284;
+  height:15px;
+  margin:0;
+  border:none;
 }
 
 h2{
@@ -99,20 +108,16 @@ li{
 }
 
 .wrapper{
-  display:flex;
-  flex-flow:wrap-reverse;
-  justify-content:space-between;
+  border-top: #edffb2 15px solid;
+  background:#fff;
 }
-
-
 
 .sidebar{
   flex: 1 auto;
   background:#425646;
-  text-align:left;
-  max-width:200px;
+  text-align:center;
+  width:100%;
   margin:10px auto;
-  order:1;
 }
 
 .main{
@@ -120,19 +125,31 @@ li{
   text-align:left;
   max-width:550px;
   min-width:325px;
-  order:2;
+  background:#fff;
 }
 
 .clips{
-  display:flex;
+  display:block;
   flex:1 auto;
-  flex-flow:wrap;
-  order:3;
   max-width:300px;
   text-align:left;
   margin:15px;
-  padding:10px;
-  border-left: #425646 2px solid;
+  border: #425646 2px solid;
+  background-color:  #edffb2;
+}
+
+.preview{
+  background: #edffb2;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.clips h2{
+  padding-left:10px;
+  display:block;
+  background-color: #425646;
+  color: #fff;
+  width:98%%;
 }
 
 .preview img{
@@ -143,15 +160,25 @@ li{
   float:left;
 }
 
-.preview a:hover, a:active{
-  background-color:transparent;
+.clips a:link, .clips a:visited{
+  text-decoration:underline;
+  color:#000;
+}
+
+.clips a:hover, .clips a:active{
+  background-color:#e1f59e;
 }
 
 .dateline{
   font-family: Garamond, "Times New Roman", serif;
   font-size:0.8em;
-  font-style:italic;
   line-height:0.2em;
+}
+
+.right-box{
+  display:flex;
+  flex-flow:column;
+  float:right;
 }
 
 .bio{
@@ -227,6 +254,7 @@ iframe{
 
 }
 
+
 @media all and (min-width:750px){
   nav ul li{
     border-top:none;
@@ -247,24 +275,34 @@ iframe{
   .menu-trigger{
     display:none;
   }
+
+  .sidebar{
+    text-align:left;
+  }
 }
 
 @media all and (min-width:800px){
   .wrapper{
     align-items:stretch;
+    display:flex;
+    flex-flow:row;
   }
 
   .sidebar{
     flex:1 auto;
+    margin:5px auto;
+    width:295px;
   }
 
   .main{
     flex:5 0px;
     flex-wrap:wrap-reverse;
+    margin:5px auto;
   }
 
   .main{
     display:flex;
     flex-flow: row;
   }
+
 }
