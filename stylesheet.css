@@ -1,3 +1,6 @@
+/*color pallette:#edffb2, #98D284, #73A46B, #425646
+*/
+
 nav ul{
   padding:3px;
   display:block;
@@ -51,6 +54,7 @@ nav ul li a:active, a:hover{
   font-family:"Catamaran", Arial, sans-serif;
   color:#FFF;
   font-weight:200;
+  list-style-type:none;
 }
 
 body{
@@ -100,15 +104,22 @@ h2{
 h3{
   font-family:"Catamaran", Arial, sans-serif;
   font-weight:500;
+  font-style:italic;
+  text-decoration:underline;
+  font-size:1.5em;
   color:#000;
+  margin:0;
 }
 
-li{
-  list-style-type:none;
+.bio li{
+  list-style-type:circle;
+  font-family:"Domine", "Times New Roman", sans-serif;
 }
 
 .wrapper{
   background:#fff;
+  display:flex;
+  justify-content:space-around;
 }
 
 .container{
@@ -124,11 +135,24 @@ li{
   margin:10px auto;
 }
 
+.sidebar h3{
+  color:#fff;
+}
+
 .main{
   text-align:left;
   max-width:550px;
   min-width:325px;
-  background:#fff;
+  margin-bottom:0;
+}
+
+.education{
+  padding:10px;
+  margin-top:0;
+}
+
+.experience{
+  padding:10px;
 }
 
 .clips{
@@ -185,9 +209,12 @@ li{
 }
 
 .bio{
-  max-width:400px;
+  display:flex;
+  flex-flow:column;
   text-align:left;
   padding:15px;
+  background:#FFF;
+  border:#425646 5px solid;
 }
 
 iframe{
@@ -214,10 +241,10 @@ iframe{
 }
 
  .main-photo{
-   width:175px;
-   height:240px; /*1.3733 ratio*/
-   margin-right:20px;
-   margin-bottom:20px;
+   width:250px;
+   height:343px; /*1.3733 ratio*/
+   padding:10px;
+   margin-bottom:10px;
    float:left;
    border:none;
  }
@@ -226,6 +253,7 @@ iframe{
    order:1;
    margin-right:20px;
  }
+
 
  nav ul{
    display:none;
@@ -258,13 +286,16 @@ iframe{
 
 @media all and (max-width:599px){
   .bio{
-    visibility:hidden;
-    display:none;
+    display:flex;
+    flex-direction:column;
+    border:none;
+    flex: 1 auto;
   }
 
   .main{
     margin:0 auto;
     max-width:300px;
+
   }
 
   .main-photo{
@@ -273,6 +304,29 @@ iframe{
     display:flex;
   }
 
+  .wrapper{
+    display:flex;
+    flex-flow:column;
+  }
+
+  .right-box{
+    display:flex;
+    flex-flow:column;
+    width:100%;
+    margin:0 auto;
+    flex:1 auto;
+  }
+
+  .clips{
+    max-width:100%;
+    margin:0;
+  }
+
+  .sidebar{
+    width:100%;
+    margin-bottom:0;
+    margin-top:0;
+  }
 }
 
 
@@ -300,6 +354,10 @@ iframe{
   .sidebar{
     text-align:left;
   }
+
+  .right-box{
+    min-width:250px;
+  }
 }
 
 @media all and (min-width:800px){
@@ -319,6 +377,11 @@ iframe{
     flex:5 0px;
     flex-wrap:wrap-reverse;
     margin:5px auto;
+    width:100%;
+  }
+
+  .bio{
+    flex:2 auto;
   }
 
 }
