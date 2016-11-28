@@ -116,6 +116,15 @@ h3{
   font-family:"Domine", "Times New Roman", sans-serif;
 }
 
+.bio a:link, .bio a:visited{
+  color:#000;
+  text-decoration:underline;
+}
+
+.bio a:active, .bio a:hover{
+  background:#edffb2;
+}
+
 .wrapper{
   background:#fff;
   display:flex;
@@ -276,6 +285,16 @@ iframe{
    margin:0 auto;
  }
 
+ .explainer a:link, .explainer a:visited{
+   font-family:"Catamaran", Arial, sans-serif;
+   color:#000;
+   font-weight:200;
+ }
+
+ .explainer a:active, .explainer a:hover{
+   background:#edffb2;
+ }
+
 
   /*@media screen and (min-width:700px){
     nav ul{
@@ -292,10 +311,30 @@ iframe{
     flex: 1 auto;
   }
 
-  .main{
-    margin:0 auto;
-    max-width:300px;
+  .main {
+    width:90%;
+  }
 
+  .education{
+    max-width:80%;
+    margin:0 auto;
+    text-align:left;
+    padding:none;
+  }
+
+  .education h3{
+    text-align:center;
+  }
+
+  .experience{
+    width:80%;
+    margin:0 auto;
+    text-align:left;
+    padding:none;
+  }
+
+  .experience h3{
+    text-align:center;
   }
 
   .main-photo{
@@ -329,6 +368,17 @@ iframe{
   }
 }
 
+@media all and (min-width: 60px){
+    .clips{
+      min-width:250px;
+    }
+
+    .main-photo{
+      width:50%;
+      height:auto;
+    }
+}
+
 
 @media all and (min-width:750px){
   nav ul li{
@@ -355,9 +405,6 @@ iframe{
     text-align:left;
   }
 
-  .right-box{
-    min-width:250px;
-  }
 }
 
 @media all and (min-width:800px){
@@ -374,14 +421,8 @@ iframe{
   }
 
   .main{
-    flex:5 0px;
-    flex-wrap:wrap-reverse;
-    margin:5px auto;
+    display:block;
     width:100%;
-  }
-
-  .bio{
-    flex:2 auto;
   }
 
 }
