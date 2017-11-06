@@ -318,6 +318,40 @@ iframe{
     }
   }*/
 
+.cardtable{
+  display:flex;
+  flex-flow:row;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:#edffb2;
+  max-height:350px;
+  padding:10px;
+  margin:10px;
+  border:#425646 solid 1px;
+}
+
+
+
+.card a:link, .card a:visited{
+  display:block;
+  padding:5px;
+  margin-bottom:0;
+  background:#425646;
+  font-size:1.2em;
+  text-align: left;
+}
+
+.card a:active, .card a:hover{
+  background-color:#4a604e;
+}
+
+.card p{
+  text-align:left;
+  font-size:0.9em;
+}
+
 @media all and (max-width:599px){
   .bio{
     display:flex;
@@ -381,9 +415,10 @@ iframe{
     margin-bottom:0;
     margin-top:0;
   }
+
 }
 
-@media all and (min-width: 60px){
+@media all and (min-width: 600px){
     .clips{
       min-width:250px;
     }
@@ -391,6 +426,11 @@ iframe{
     .main-photo{
       width:50%;
       height:auto;
+    }
+
+    .card{
+      width:40%;
+      max-height:415px;
     }
 }
 
@@ -420,6 +460,8 @@ iframe{
     text-align:left;
   }
 
+
+
 }
 
 @media all and (min-width:800px){
@@ -438,6 +480,10 @@ iframe{
   .main{
     display:block;
     width:100%;
+  }
+
+  .card{
+    width:28%;
   }
 
 }
