@@ -42,21 +42,43 @@
 <div class="container">
 <h2>Page design</h2>
 
-<iframe src="https://drive.google.com/viewer?
-srcid=0B0rDrVUaPpZsREZRNFc5MTRZZWM&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="800px" height="1425px"></iframe>
+<div class="slideshow">
+
+  <img class="myslides" src="Pages/20161130_A_001.jpg" style="width:100%">
+  <img class="myslides" src="Pages/20170827_A_006.jpg" style="width:100%">
+  <img class="myslides" src="Pages/20170910_A_005.jpg" style="width:100%">
+  <img class="myslides" src="Pages/20170913_A_006.jpg" style="width:100%">
+  <img class="myslides" src="Pages/20170915_A_001.jpg" style="width:100%">
+  <img class="myslides" src="Pages/20170915_A_004.jpg" style="width:100%">
+  <img class="myslides" src="Pages/20171019_B_001.jpg" style="width:100%">
+  <img class="myslides" src="Pages/20171029_B_001.jpg" style="width:100%">
+  <img class="myslides" src="Pages/20171101_B_001.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("myslides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 <br>
-<iframe src="https://drive.google.com/viewer?
-srcid=0B0rDrVUaPpZsZWhPeEFzOFYzWFE&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="800px" height="1425px"></iframe>
-<br>
-<iframe src="https://drive.google.com/viewer?
-srcid=0B0rDrVUaPpZsYzZEM1lkWDZ3Yzg&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="800px" height="1425px"></iframe>
-<br>
-<iframe src="https://drive.google.com/viewer?
-srcid=0B0rDrVUaPpZsU25IQVdiVEhJVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="800px" height="1425px"></iframe>
-
-
-
-
 </div>
 </body>
 <div class="footer">
