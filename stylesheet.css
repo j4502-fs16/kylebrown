@@ -294,6 +294,26 @@ iframe{
    box-shadow: 5px 5px 5px #888;
  }
 
+.regular a:link, .regular a:visited, .document a:link, .document a:visited{
+  background:#fff;
+  font-family: "Domine", "Times New Roman", serif;
+  weight:300;
+  color:#425646;
+  font-size:1em;
+  line-height:1.2em;
+  text-decoration: underline;
+}
+
+.regular a:active, .regular a:hover, .document a:active, .document a:hover{
+  color:#4a604e;
+}
+
+.regular{
+  width:80%;
+  margin:auto;
+  text-align:left;
+}
+
  .explainer{
    text-align:left;
    max-width:800px;
